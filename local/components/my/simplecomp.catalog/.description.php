@@ -7,6 +7,6 @@ $arComponentDescription = array(
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
 		"ID" => "my_id",
-        "NAME" => GetMessage("SECTION_NAME"),
+        "NAME" => GetMessage("SIMPLECOMP_SECTION_NAME"),
 	),
 );
