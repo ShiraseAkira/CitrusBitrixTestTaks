@@ -7,7 +7,9 @@
     <? foreach ($arResult['NEWS'] as $class) { ?>
         <li>
             <b><?= $class['NAME'] ?></b> - <?= $class['ACTIVE_FROM'] ?>
-            (<?= implode(', ', $class['SECTIONS']) ?>)
+            (<?= empty($class['SECTIONS'])
+                ? GetMessage("SIMPLECOMP_NO_CORRESPONDING_SECTIONS")
+                : implode(', ', $class['SECTIONS']) ?>)
             <ul>
                 <? foreach ($class['PRODUCTS'] as $product) { ?>
                     <li>
